@@ -65,13 +65,13 @@ void AMainaicontroller::Tick(float DeltaTime)
 		player = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 		ASwordmancharacter* sworddup = Cast<ASwordmancharacter>(player);
 		if (sworddup) {
-			//SetFocus(sworddup);
-			//MoveToActor(sworddup,0.5f);
+			SetFocus(sworddup);
+			MoveToActor(sworddup,0.5f);
 		}
 		ARoleplayingTutorialCharacter* Roledup = Cast<ARoleplayingTutorialCharacter>(player);
 		if (Roledup) {
-			//SetFocus(Roledup);
-			//MoveToActor(Roledup, 0.5f);
+			SetFocus(Roledup);
+			MoveToActor(Roledup, 0.5f);
 		}
 	}
 	
